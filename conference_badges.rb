@@ -35,6 +35,6 @@ def printer
   rooms.each do |room|
     room
   end
-  puts badge
-  puts room
+  puts badges
+  puts rooms
 end
