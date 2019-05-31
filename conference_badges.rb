@@ -26,9 +26,7 @@ end
 
 def printer
   list = []
-  badges = batch_badge_creator()
-  room_assignments = assign_rooms()
-  list << badges
-  list << room_assignments
+  list << batch_badge_creator(attendees)
+  list << assign_rooms(attendees)
   puts list
 end
