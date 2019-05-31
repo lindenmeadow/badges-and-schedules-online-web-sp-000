@@ -26,11 +26,12 @@ end
 
 def printer
   badges_and_room_assignments = []
-  badges = batch_badge_creator(attendees)
+  batch_badge_creator(attendees)
+  assign_rooms(attendees)
     badges.each do |name|
       badges_and_room_assignments << name
     end
-  room_assignments = assign_rooms(attendees)
+  
     room_assignments.each do |room|
       badges_and_room_assignments << room
     end
