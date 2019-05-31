@@ -26,11 +26,9 @@ end
 
 def printer(attendees)
   list = []
-  b = batch_badge_creator(attendees)
-  a = assign_rooms(attendees)
-  attendees.each do |b, a|
-    list << b
-    list << a
-  end
+  badges = batch_badge_creator(attendees)
+  room_assignments = assign_rooms(attendees)
+  list << badges
+  list << room_assignments
   puts list
 end
