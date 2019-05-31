@@ -24,7 +24,7 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-def printer
+def printer(attendees)
   list1 = []
   list1 << batch_badge_creator(attendees)
   list1.each do |badge|
