@@ -15,13 +15,13 @@ end
 
 def assign_rooms(attendees)
   room = 1
-  welcome = []
+  room_assignments = []
   attendees.each do |name|
     message = "Hello, #{name}! You'll be assigned to room #{room}."
-    welcome << message
+    room_assignments << message
   	room += 1
   end
-  return welcome
+  return room_assignments
 end
 
 def printer(attendees)
