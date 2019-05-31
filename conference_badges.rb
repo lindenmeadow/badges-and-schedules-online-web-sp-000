@@ -31,7 +31,6 @@ def printer
     badges.each do |name|
       badges_and_room_assignments << name
     end
-
     room_assignments.each do |room|
       badges_and_room_assignments << room
     end
