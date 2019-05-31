@@ -9,6 +9,7 @@ def batch_badge_creator(attendees)
     badge = badge_maker(name)
     badges << badge
   end
+  return badges
 end
 
 
