@@ -24,7 +24,7 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-def printer(attendees)
+def printer
   list = []
   badges = batch_badge_creator(attendees)
   room_assignments = assign_rooms(attendees)
